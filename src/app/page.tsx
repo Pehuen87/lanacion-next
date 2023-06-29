@@ -1,3 +1,4 @@
+import { configDotenv } from 'dotenv'
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -49,7 +50,7 @@ export default function Home() {
           <h2>
             Docs <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>{process.env.BACKEND_URL}</p>
         </a>
 
         <a
