@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project, "Challenge Next La Nacion," was created by Pehuén Assalone. It is a frontend application built with Next.js, which showcases a list of products obtained from a server. The application also enables users to perform searches and navigate through paginated results using server-side components. The frontend uses Axios for making API requests to fetch user data, and the entire project is styled using Tailwind CSS.
+This project, "Challenge Next La Nacion," was created by Pehuén Assalone. It is a frontend application built with Next.js v13, with App Router, which showcases a list of products obtained from a server. The application also enables users to perform searches and navigate through paginated results using server-side components. The frontend uses Axios for making API requests to fetch user data, and the entire project is styled using Tailwind CSS.
 
 ## Installation
 
