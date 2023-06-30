@@ -9,13 +9,13 @@ This project, "Challenge Next La Nacion," was created by Pehuén Assalone. It is
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Pehuen87/lanacionnext
+git clone https://github.com/Pehuen87/lanacion-next
 ```
 
 2. Install the dependencies:
 
 ```bash
-cd lanacionnext
+cd lanacion-next
 npm install
 ```
 
@@ -62,4 +62,4 @@ The application relies on the following dependencies:
 
 ## Repository
 
-The source code for this project is available on GitHub: [Challenge Next La Nacion](https://github.com/Pehuen87/lanacionnext)
+The source code for this project is available on GitHub: [Challenge Next La Nacion](https://github.com/Pehuen87/lanacion-next)
