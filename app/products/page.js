@@ -1,7 +1,12 @@
 import SearchForm from "./searchForm";
 
-const fetchProducts = ({ pageNumber, itemsPerPage, description, product_name }) => {
-    return fetch(`http://localhost:3030/products/?pageNumber=${pageNumber}&itemsPerPage=${itemsPerPage}` + (product_name ? '&product_name=' + product_name : '') + (description ? '&description=' + description : ''), { cache: "no-store" })
+const fetchProducts = ({ pageNumber = 1, itemsPerPage = 10, description, product_name }) => {
+
+    const url = `http://${process.env.BACKEND_URL}/products/?pageNumber=${pageNumber}&itemsPerPage=${itemsPerPage}` +
+    (product_name ? '&product_name=' + product_name : '') +
+    (description ? '&description=' + description : '');
+
+    return fetch(url, { cache: "no-store" })
         .then((res) => {
             if (!res.ok) {
                 throw new Error("Error retrieving products");
@@ -13,9 +18,10 @@ const fetchProducts = ({ pageNumber, itemsPerPage, description, product_name }) 
         })
 };
 
-export default async function Product({ searchParams }) {
+export default async function Product({searchParams }) {
 
-    const products = await fetchProducts({ pageNumber: 1, itemsPerPage: 1000, description: searchParams.description, product_name: searchParams.product_name });
+    
+    const products = await fetchProducts(searchParams);
 
 
     return (

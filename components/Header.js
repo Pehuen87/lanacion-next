@@ -2,17 +2,13 @@ import Link from "next/link"
 import User from "./User"
 
 export default function Header() {
-    const Links = [{
-        label: 'Products',
-        route: '/products'
-    },
+    const Links = [
     {
         label: 'Home',
         route: '/'
-    },
-    {
-        label: 'About',
-        route: '/about'
+    },{
+        label: 'Products',
+        route: '/products'
     }]
 
 
